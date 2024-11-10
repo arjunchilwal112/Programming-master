@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Videos - ProgrammingWithHarry</title>
+</head>
+
+<body>
+    <div class="videohome">
+        <br>
+        <!-- navigationbar -->
+        <Header class="homeheader">
+            <nav id="collapsef">
+                <div class="navitems d-flex" style="justify-content: space-between;">
+
+                    <div class="leftcontent d-flex">
+                        <img class=" brandlogo " src="https://yt3.ggpht.com/ytc/AAUvwnjo8_vj99CKoTE5DcYrrS6GtsMzZKa5V2fzIuiu=s176-c-k-c0x00ffffff-no-rj-mo " alt=" ">
+
+                        <ul class="d-flex navlinks">
+                            <a class=" mx-5 hoverbtn p-5 nav_a" href="../index.html">Home</a>
+                            <a class=" mx-5 hoverbtn p-5 nav_a" href="index.html">Videos</a>
+                            <a class=" mx-5 hoverbtn p-5 nav_a" href="../blog/blog.html">Blog</a>
+                            <a class=" mx-5 hoverbtn p-5 nav_a" href="../contact.html">Contact Me</a>
+
+                        </ul>
+                        <button class=" collapsebtn" onclick="collapsebtnclicked()"><img src="../img/collapse.svg"
+                                alt=""></button>
+
+                    </div>
+                    <!-- these spaces are for mobile devices -->
+                    <br class="forsmalldevice">
+                    <br class="forsmalldevice">
+                    <br class="forsmalldevice">
+                    <br class="forsmalldevice">
+                    <br class="forsmalldevice">
+                    <br class="forsmalldevice">
+                    <br class="forsmalldevice">
+                    <br class="forsmalldevice">
+                    <br class="forsmalldevice">
+                    <br class="forsmalldevice">
+
+
+
+                    <div class=" rightcontent d-flex">
+
+                        <div class="search" style="align-self: center;">
+                            <input class='searchinput' type=" text " placeholder=" Search ">
+                            <button class='btn'>Search</button>
+                        </div>
+
+                        <div class="userloginarea d-flex  ">
+                            <a href="../signin.html"><button class="login btn mx-5">Login</button></a>
+                            <a href="../signup.html"><button class="signup btn  mx-5">Signup</button></a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </nav>
+            <!-- title of page located down of navigation bar -->
+            <h1 style="display:block;width: fit-content;padding: 10px 50px; margin:0px auto;text-align: center;border-radius: 30px; position: relative; top: 150px;font-family: 'Open Sans', sans-serif;color: rgb(206, 214, 236);background-color: rgba(235, 226, 215, 0.116);">
+                Videos
+
+            </h1>
+
+
+
+        </Header>
+    </div>
+
+
+
+
+    <main>
+
+        <div class="container d-flex" style="justify-content: center;">
+            <div class="card d-flex">
+                <div>
+                    <img class="card-img" src="../img/pythonlogo.png" alt="">
+                </div>
+                <div class="card-heading">
+                    <h1>Python Tutorials For Beginners In English</h1>
+                </div>
+                <div class="about-card">Python Tutorials For Beginners In English</div>
+                <a href="video/video-list.html"><button onclick="categoryfun('python')" class="card-button">Start
+                        Watching</button></a>
+
+            </div>
+            <div class="card d-flex">
+                <div>
+                    <img class="card-img" src="../img/djangologo.png" alt="">
+                </div>
+                <div class="card-heading">
+                    <h1>Python Django Tutorials In English</h1>
+                </div>
+                <div class="about-card">Python Django Tutorials In English</div>
+                <a href="video/video-list.html"><button onclick="categoryfun('python-django')" class="card-button">Start
+                        Watching</button></a>
+
+            </div>
+            <div class="card d-flex">
+                <div>
+                    <img class="card-img" src="../img/onevideologo.png" alt="">
+                </div>
+                <div class="card-heading">
+                    <h1>Learn in one video</h1>
+                </div>
+                <div class="about-card">Learn given topic just in one video</div>
+                <a href="video/video-list.html"><button onclick="categoryfun('learnInOne')" class="card-button">Start
+                        Watching</button></a>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </main>
+    <footer class="d-flex" style="align-items: center;height:50px;background:rgb(80, 80, 80);color:rgb(245, 242, 237);font-family: 'Open Sans', sans-serif;">
+        <div class="footer" style="width: 100vw; text-align: center;">
+            Copyright © 2021-2022 ProgrammingWithHarry
+        </div>
+    </footer>
+
+
+    <script src="../js/videolist.js"></script>
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
